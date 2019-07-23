@@ -24,7 +24,7 @@ class App extends Component {
             this.reset()
         }
         else if(button === "Back"){
-            this.backspace()
+            this.back()
         }
 
         else {
@@ -65,7 +65,7 @@ class App extends Component {
         })
     };
 
-    backspace = () => {
+    back = () => {
         this.setState({
             result: this.state.result.slice(0, -1)
         })
